@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>USDTflow – Send USDT without TRX | Перевод USDT без TRX</title>
+  <meta name="description" content="USDTflow – send or transfer USDT without owning TRX. Простые крипто-переводы без комиссии и газа. Скоро запуск." />
+  <meta name="keywords" content="USDT, TRX, перевод USDT без TRX, send USDT without TRX, TRON energy, без комиссии, crypto transfer" />
+  <meta name="robots" content="index, follow" />
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background:#0a0a0a;
+      color:#fff;
+      display:flex;
+      flex-direction:column;
+      min-height:100vh;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:40px 20px;
+    }
+    h1 {
+      font-size:2.6rem;
+      margin-bottom:1rem;
+      background:linear-gradient(90deg,#00ffa3,#00b7ff);
+      -webkit-background-clip:text;
+      -webkit-text-fill-color:transparent;
+      font-weight:700;
+      letter-spacing:0.5px;
+    }
+    p {
+      max-width:600px;
+      font-size:1.1rem;
+      line-height:1.6;
+      margin-bottom:1.5rem;
+      color:#ccc;
+    }
+    .features {
+      display:flex;
+      flex-direction:column;
+      gap:0.8rem;
+      margin:1.5rem 0;
+      color:#b5b5b5;
+      font-size:1rem;
+    }
+    .coming {
+      margin-top:2rem;
+      font-weight:600;
+      font-size:1.1rem;
+      color:#00b7ff;
+      letter-spacing:2px;
+      text-transform:uppercase;
+      text-shadow:0 0 10px #00b7ff33;
+    }
+    footer {
+      margin-top:3rem;
+      font-size:0.9rem;
+      color:#555;
+    }
+    @media (max-width:600px){
+      h1{font-size:2.1rem;}
+      p{font-size:1rem;}
+    }
+  </style>
+</head>
+<body>
+  <main id="content">
+    <h1 id="title">USDTflow</h1>
+    <p id="subtitle">Send USDT without TRX — simple, fast, and transparent. Like a bank transfer.</p>
+    <div class="features" id="features">
+      <div>No TRX required — we cover the network energy cost</div>
+      <div>Clear pricing — one small fixed fee</div>
+      <div>Works on any device worldwide</div>
+    </div>
+    <div class="coming" id="coming">COMING SOON 2025</div>
+    <footer id="footer">© 2025 USDTflow | All rights reserved</footer>
+  </main>
+
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VV4F1EHNL4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VV4F1EHNL4');
+</script>
+  
+
+  <script>
+    const lang = navigator.language || navigator.userLanguage;
+    const ruTexts = {
+      subtitle: "Переводи USDT без TRX — просто, быстро и прозрачно. Как банковский перевод.",
+      features: [
+        "Не нужен TRX — мы оплачиваем энергию сети",
+        "Прозрачные условия — одна небольшая фиксированная комиссия",
+        "Работает на любом устройстве по всему миру"
+      ],
+      coming: "СКОРО ЗАПУСК 2025",
+      footer: "© 2025 USDTflow | Все права защищены"
+    };
+
+    if (lang.startsWith("ru")) {
+      document.documentElement.lang = "ru";
+      document.title = "USDTflow – Перевод USDT без TRX";
+      document.getElementById("subtitle").textContent = ruTexts.subtitle;
+      const f = document.getElementById("features");
+      f.innerHTML = "";
+      ruTexts.features.forEach(t => {
+        const d = document.createElement("div");
+        d.textContent = t;
+        f.appendChild(d);
+      });
+      document.getElementById("coming").textContent = ruTexts.coming;
+      document.getElementById("footer").textContent = ruTexts.footer;
+    }
+  </script>
+</body>
+</html>
+
