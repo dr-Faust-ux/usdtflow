@@ -1,122 +1,263 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>USDTflow – Send USDT without TRX | Перевод USDT без TRX</title>
-  <meta name="description" content="USDTflow – send or transfer USDT without owning TRX. Простые крипто-переводы без комиссии и газа. Скоро запуск." />
-  <meta name="keywords" content="USDT, TRX, перевод USDT без TRX, send USDT without TRX, TRON energy, без комиссии, crypto transfer" />
-  <meta name="robots" content="index, follow" />
-  <style>
-    * { margin:0; padding:0; box-sizing:border-box; }
-    body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background:#0a0a0a;
-      color:#fff;
-      display:flex;
-      flex-direction:column;
-      min-height:100vh;
-      justify-content:center;
-      align-items:center;
-      text-align:center;
-      padding:40px 20px;
-    }
-    h1 {
-      font-size:2.6rem;
-      margin-bottom:1rem;
-      background:linear-gradient(90deg,#00ffa3,#00b7ff);
-      -webkit-background-clip:text;
-      -webkit-text-fill-color:transparent;
-      font-weight:700;
-      letter-spacing:0.5px;
-    }
-    p {
-      max-width:600px;
-      font-size:1.1rem;
-      line-height:1.6;
-      margin-bottom:1.5rem;
-      color:#ccc;
-    }
-    .features {
-      display:flex;
-      flex-direction:column;
-      gap:0.8rem;
-      margin:1.5rem 0;
-      color:#b5b5b5;
-      font-size:1rem;
-    }
-    .coming {
-      margin-top:2rem;
-      font-weight:600;
-      font-size:1.1rem;
-      color:#00b7ff;
-      letter-spacing:2px;
-      text-transform:uppercase;
-      text-shadow:0 0 10px #00b7ff33;
-    }
-    footer {
-      margin-top:3rem;
-      font-size:0.9rem;
-      color:#555;
-    }
-    @media (max-width:600px){
-      h1{font-size:2.1rem;}
-      p{font-size:1rem;}
-    }
-  </style>
-</head>
-<body>
-  <main id="content">
-    <h1 id="title">USDTflow</h1>
-    <p id="subtitle">Send USDT without TRX — simple, fast, and transparent. Like a bank transfer.</p>
-    <div class="features" id="features">
-      <div>No TRX required — we cover the network energy cost</div>
-      <div>Clear pricing — one small fixed fee</div>
-      <div>Works on any device worldwide</div>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>USDTflow – Перевод USDT без TRX | Send USDT without TRX</title>
+
+    <!-- ✅ Расширенное SEO -->
+    <meta name="description" content="USDTflow — сервис для перевода USDT без необходимости иметь TRX. Переводы USDT без комиссии и газа. Отправляйте USDT легко и быстро. Send USDT without TRX or gas, simple and transparent crypto transfers." />
+    <meta name="keywords" content="USDT, USDT TRC20, TRX, TRON energy, перевод USDT без TRX, как перевести USDT без TRX, USDT без комиссии, send USDT without TRX, USDT no gas, how to send USDT without fee, crypto wallet, USDT transfer, TRON fee, USDT без газа, отправить USDT без TRX, crypto transfer without fee" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Оптимизация для соцсетей -->
+    <meta property="og:title" content="USDTflow – Перевод USDT без TRX" />
+    <meta property="og:description" content="Переводи USDT без необходимости иметь TRX. Простые и прозрачные переводы USDT без комиссии." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://твойлогин.github.io/usdtflow-site/preview.png" />
+    <meta property="og:url" content="https://твойлогин.github.io/usdtflow-site/" />
+    <link rel="canonical" href="https://твойлогин.github.io/usdtflow-site/" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <style>
+      * { margin:0; padding:0; box-sizing:border-box; }
+      body {
+        font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+        background:#0a0a0a;
+        color:#fff;
+        display:flex;
+        flex-direction:column;
+        min-height:100vh;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+        padding:40px 20px;
+      }
+      h1{
+        font-size:2.6rem;
+        margin-bottom:1rem;
+        background:linear-gradient(90deg,#00ffa3,#00b7ff);
+        -webkit-background-clip:text;
+        -webkit-text-fill-color:transparent;
+        font-weight:700;
+        letter-spacing:0.5px;
+      }
+      p{
+        max-width:600px;
+        font-size:1.1rem;
+        line-height:1.6;
+        margin-bottom:1.5rem;
+        color:#ccc;
+      }
+      .features{
+        display:flex;
+        flex-direction:column;
+        gap:0.8rem;
+        margin:1.5rem 0;
+        color:#b5b5b5;
+        font-size:1rem;
+      }
+      .coming{
+        margin-top:2rem;
+        font-weight:600;
+        font-size:1.1rem;
+        color:#00b7ff;
+        letter-spacing:2px;
+        text-transform:uppercase;
+        text-shadow:0 0 10px #00b7ff33;
+      }
+      .about{
+        max-width:800px;
+        margin-top:3rem;
+        line-height:1.7;
+        color:#bbb;
+        font-size:1rem;
+      }
+      .about h2{
+        margin-top:2rem;
+        margin-bottom:1rem;
+        font-size:1.6rem;
+        background:linear-gradient(90deg,#00ffa3,#00b7ff);
+        -webkit-background-clip:text;
+        -webkit-text-fill-color:transparent;
+        font-weight:700;
+      }
+      .about strong{color:#00ffa3;}
+      footer{
+        margin-top:3rem;
+        font-size:0.9rem;
+        color:#555;
+      }
+      .lang-switcher {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        display: flex;
+        gap: 10px;
+      }
+      .lang-btn {
+        background: rgba(255,255,255,0.1);
+        border: 1px solid rgba(255,255,255,0.2);
+        color: #fff;
+        padding: 8px 16px;
+        border-radius: 20px;
+        cursor: pointer;
+        font-size: 0.9rem;
+        transition: all 0.3s ease;
+      }
+      .lang-btn:hover {
+        background: rgba(255,255,255,0.2);
+      }
+      .lang-btn.active {
+        background: linear-gradient(90deg,#00ffa3,#00b7ff);
+        color: #000;
+        font-weight: 600;
+      }
+      @media(max-width:600px){
+        h1{font-size:2.1rem;}
+        p{font-size:1rem;}
+        .lang-switcher {
+          position: relative;
+          top: 0;
+          right: 0;
+          margin-bottom: 2rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Переключатель языков -->
+    <div class="lang-switcher">
+      <button class="lang-btn active" data-lang="ru">RU</button>
+      <button class="lang-btn" data-lang="en">EN</button>
     </div>
-    <div class="coming" id="coming">COMING SOON 2025</div>
-    <footer id="footer">© 2025 USDTflow | All rights reserved</footer>
-  </main>
 
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-VV4F1EHNL4"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Русская версия -->
+    <div class="lang-content ru">
+      <h1>USDTflow</h1>
+      <p>Переводи USDT по сети TRON (TRC20) без необходимости иметь TRX. Быстро, безопасно и удобно.</p>
 
-  gtag('config', 'G-VV4F1EHNL4');
-</script>
-  
+      <div class="features">
+        <span style="color: #00b7ff">⧗ Без необходимости держать TRX</span>
+        <span style="color: #00ffa3">⚡ Мгновенные переводы</span>
+        <span style="color: #00ffa3">◍ Безопасные транзакции</span>
+        <span style="color: #4facfe">◒ Доступно в любой стране</span>
+      </div>
 
-  <script>
-    const lang = navigator.language || navigator.userLanguage;
-    const ruTexts = {
-      subtitle: "Переводи USDT без TRX — просто, быстро и прозрачно. Как банковский перевод.",
-      features: [
-        "Не нужен TRX — мы оплачиваем энергию сети",
-        "Прозрачные условия — одна небольшая фиксированная комиссия",
-        "Работает на любом устройстве по всему миру"
-      ],
-      coming: "СКОРО ЗАПУСК 2025",
-      footer: "© 2025 USDTflow | Все права защищены"
-    };
+      <p class="coming">Coming Soon</p>
 
-    if (lang.startsWith("ru")) {
-      document.documentElement.lang = "ru";
-      document.title = "USDTflow – Перевод USDT без TRX";
-      document.getElementById("subtitle").textContent = ruTexts.subtitle;
-      const f = document.getElementById("features");
-      f.innerHTML = "";
-      ruTexts.features.forEach(t => {
-        const d = document.createElement("div");
-        d.textContent = t;
-        f.appendChild(d);
+      <section class="about">
+        <h2>О проекте</h2>
+        <p><strong>USDTflow</strong> — инновационный сервис, который позволит переводить USDT по сети TRON (TRC20)
+          без необходимости иметь TRX на балансе. Мы создаем решение, которое берет на себя оплату газа,
+          используя энергию сети и оптимизацию комиссии. Это просто, безопасно и быстро — как обычная банковская транзакция.</p>
+        <p>Уже скоро будет запущена <strong>бета-версия</strong> платформы, где пользователи смогут тестировать переводы
+          и оценить удобство безгазовых транзакций. Следите за обновлениями!</p>
+
+        <h2>About the project</h2>
+        <p><strong>USDTflow</strong> is an innovative service designed to let users send USDT over the TRON (TRC20)
+          network without needing TRX for gas fees. Our technology covers transaction energy costs, making transfers
+          seamless, instant, and as simple as a regular bank payment.</p>
+        <p>The <strong>beta version</strong> will be launched soon, allowing early users to test gas-free transfers
+          and experience the next generation of crypto usability. Stay tuned!</p>
+      </section>
+    </div>
+
+    <!-- Английская версия -->
+    <div class="lang-content en" style="display: none;">
+      <h1>USDTflow</h1>
+      <p>Send USDT on TRON network (TRC20) without needing TRX. Fast, secure, and convenient.</p>
+
+      <div class="features">
+        <span style="color: #00b7ff">⧗ No TRX required</span>
+        <span style="color: #00ffa3">⚡ Instant transfers</span>
+        <span style="color: #00ffa3">◍ Secure transactions</span>
+        <span style="color: #4facfe">◒ Available worldwide</span>
+      </div>
+
+      <p class="coming">Coming Soon</p>
+
+      <section class="about">
+        <h2>About the project</h2>
+        <p><strong>USDTflow</strong> is an innovative service that enables USDT transfers on the TRON (TRC20)
+          network without requiring TRX balance. We're building a solution that handles gas fees
+          using network energy and fee optimization. It's simple, secure, and fast — just like a regular bank transaction.</p>
+        <p>The <strong>beta version</strong> will launch soon, allowing users to test transfers
+          and experience the convenience of gas-free transactions. Stay tuned for updates!</p>
+
+        <h2>О проекте</h2>
+        <p><strong>USDTflow</strong> — инновационный сервис для перевода USDT в сети TRON (TRC20)
+          без необходимости иметь TRX. Наша технология покрывает комиссии за счет энергии сети,
+          делая переводы простыми и безопасными.</p>
+        <p><strong>Бета-версия</strong> скоро будет запущена для тестирования безгазовых транзакций.</p>
+      </section>
+    </div>
+
+    <footer>© 2025 USDTflow</footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const langButtons = document.querySelectorAll('.lang-btn');
+        const langContents = document.querySelectorAll('.lang-content');
+        
+        // Функция переключения языка
+        function switchLanguage(lang) {
+          // Обновляем контент
+          langContents.forEach(content => {
+            content.style.display = content.classList.contains(lang) ? 'block' : 'none';
+          });
+          
+          // Обновляем кнопки
+          langButtons.forEach(btn => {
+            if (btn.dataset.lang === lang) {
+              btn.classList.add('active');
+            } else {
+              btn.classList.remove('active');
+            }
+          });
+          
+          // Сохраняем выбор в localStorage
+          localStorage.setItem('preferred-lang', lang);
+        }
+        
+        // Обработчики для кнопок
+        langButtons.forEach(btn => {
+          btn.addEventListener('click', () => {
+            switchLanguage(btn.dataset.lang);
+          });
+        });
+        
+        // Автоматическое определение языка при загрузке
+        function autoDetectLanguage() {
+          const savedLang = localStorage.getItem('preferred-lang');
+          if (savedLang) {
+            switchLanguage(savedLang);
+            return;
+          }
+          
+          const browserLang = navigator.language || navigator.userLanguage;
+          // Если браузер на английском - показываем английскую версию
+          if (browserLang.toLowerCase().startsWith('en')) {
+            switchLanguage('en');
+          } else {
+            // Для всех остальных - русскую
+            switchLanguage('ru');
+          }
+        }
+        
+        // Запускаем автоопределение
+        autoDetectLanguage();
       });
-      document.getElementById("coming").textContent = ruTexts.coming;
-      document.getElementById("footer").textContent = ruTexts.footer;
-    }
-  </script>
-</body>
-</html>
+    </script>
 
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VV4F1EHNL4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-VV4F1EHNL4');
+    </script>
+  </body>
+</html>
